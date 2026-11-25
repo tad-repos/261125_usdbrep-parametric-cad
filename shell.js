@@ -1,0 +1,1 @@
+document.getElementById('app-theme-toggle').addEventListener('click',()=>{const root=document.documentElement;root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('app-theme',root.dataset.theme)}catch{}window.dispatchEvent(new Event('app:themechange'));});
